@@ -1,0 +1,25 @@
+name: "LambdaPythonPullRequest"
+
+env:
+    FS_LOCATION: "modules/terraform-aws-amplify-static-website-deployment-from-s3/bin"
+
+on:
+    pull_request:
+        paths:
+        - "${{FS_LOCATION}}/**.py"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: Set up Python 3.8
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.8
+        - name: Tests
+          run: |
+            cd ${{FS_LOCATION}}
+            source lambda/bin/activate
+            python -m unittest main_test.py
