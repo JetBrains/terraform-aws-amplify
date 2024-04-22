@@ -13,14 +13,19 @@ endif
 env_name="lambda"
 
 python-env.deactivate:
-> @deactivate
+> @rm -fr __pycache__
+> @rm -fr ${env_name}
+> @rm -fr .coverage
 
 python-env.activate:
 > @source "${env_name}/bin/activate"
 
 init-python-env:
-> @python3 -m venv "${env_name}"
-> @source "${env_name}/bin/activate" && python3 -m pip install boto3
+> @python3 -m venv "${env_name}" && source "${env_name}/bin/activate" && python3 -m pip install boto3
 
 tests:
-> @python -m unittest main_test.py
+> @python3 -m unittest main_test.py
+
+coverage:
+> @coverage run -m unittest main_test.py
+> @coverage report
