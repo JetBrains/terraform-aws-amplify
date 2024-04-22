@@ -47,29 +47,16 @@ Refer to this [page](./CONTRIBUTING.md) for details in regard to contribution in
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.20 |
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.20 |
+No providers.
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_amplify_app.site](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/amplify_app) | resource |
-| [aws_amplify_branch.site](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/amplify_branch) | resource |
+No resources.
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_aws_s3_bucket_store"></a> [aws\_s3\_bucket\_store](#input\_aws\_s3\_bucket\_store) | The AWS S3 details where the ZIP bundle that needs to be deployed is stored | <pre>object({<br>    bucket_name   = string<br>    bucket_path   = string<br>    zip_file_name = string<br>    region        = string<br>  })</pre> | n/a | yes |
-| <a name="input_deployment_name"></a> [deployment\_name](#input\_deployment\_name) | The name of the default deployment name for the targeted website | `string` | `"main"` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the web site | `string` | n/a | yes |
-| <a name="input_password"></a> [password](#input\_password) | The password of the user | `string` | `""` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to the resources | `map(string)` | `{}` | no |
-| <a name="input_username"></a> [username](#input\_username) | The username of the user | `string` | `""` | no |
+No inputs.
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_amplify_site"></a> [amplify\_site](#output\_amplify\_site) | The Amplify site configuration details |
-| <a name="output_lambda_config"></a> [lambda\_config](#output\_lambda\_config) | The Lambda function configuration details |
+| <a name="output_debug"></a> [debug](#output\_debug) | Export all the values related with the website |
 <!-- END_TF_DOCS -->
