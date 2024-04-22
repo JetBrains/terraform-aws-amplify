@@ -3,8 +3,6 @@
 
 [![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-Note: this module is a work in progress and is not yet ready for use.
-
 AWS Amplify is a development platform for building secure, scalable mobile and web
 applications. It offers a broad range of services and features, including
 authentication, analytics, API (GraphQL and REST), interactions, and more.
