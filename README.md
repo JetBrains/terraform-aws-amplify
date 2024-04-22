@@ -11,6 +11,9 @@ integrates with your version control system to enable continuous deployment.
 The service provides a unified model to manage backend and frontend development
 workflows, and it helps to seamlessly integrate with other AWS services.
 
+The terraform-aws-amplify module simplifies the deployment process of web site by automatically
+deploying the static website from an existing S3 bucket to a new AWS Amplify service that it sets up for you.
+
 ## Compatibility
 
 The minimum supported Terraform version is: 1.3.0.
