@@ -16,7 +16,7 @@ locals {
 
 module "main" {
   source                                 = "babbel/lambda-with-inline-code/aws"
-  version                                = "1.6.0"
+  version                                = "2.0.0"
   function_name                          = local.final_lambda_conf.name
   description                            = local.final_lambda_conf.description
   runtime                                = "python3.12"
