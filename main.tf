@@ -1,5 +1,5 @@
 locals {
-  enable_basic_auth = var.username != null && var.password != null || var.username != "" && var.password != ""
+  enable_basic_auth = (var.username != null && var.password != null) && (var.username != "" && var.password != "")
   tags              = merge(var.tags, { CreatedWith = "Terraform" })
 }
 
